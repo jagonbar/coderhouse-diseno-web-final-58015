@@ -1,0 +1,102 @@
+main{            
+    background-repeat: repeat;
+    background-size  :500px;
+    background-color :#ccc;    
+    background       : linear-gradient(180deg, rgba(146, 204, 225, 1) , rgba(255,255,255,1) 100%);
+    margin           : 0 auto;    
+    width            : 100vw;
+    bottom           : 0;
+    .title{
+        margin             : 0;
+        padding            : 3px;
+        background-color   : $color-rojo;
+        background-image   : url(/multimedia/img/joystick-rojo.jpg);
+        background-repeat  : no-repeat;
+        background-size    : contain;
+        background-position: center;
+        text-align         : center;
+        
+        display            : flex;
+        flex-direction: column;
+        justify-content    : center;
+        align-items        : center;
+        color      : white;
+        font-family: $font-orbitron;
+        
+        @media only screen and (max-width:400px) {
+            h1{         
+                font-size  : 0.8rem;
+            }
+            h2{         
+                font-size  : 0.4rem;
+                
+                
+            }
+        }
+        @media only screen and (min-width:401px) and (max-width:960px) {
+            height             : 50px;
+            h1{               
+                font-size  : 1rem;
+            }            
+            h2{         
+                font-size  : 0.5rem;
+    
+            }
+        }
+        @media only screen and (min-width:961px) {
+            height             : 100px;
+            h1{            
+                font-size  : 2rem;
+            }
+            h2{         
+                font-size  : 1rem;                                    
+            }
+        }        
+        // object-fit      : fill;
+    }
+}
+#main-content{    
+    position        : relative;
+    bottom          : 1px;
+    box-sizing      : border-box;
+    font-family     : $font-jura;
+    border          : 1px dotted #ccc;
+    border-radius   : 5px;
+    margin          : 0 auto;    
+    background-color: #fff;
+
+    // flex
+    display         : flex;
+    column-gap      : 2px;
+    justify-content : flex-start;
+
+    // mobile
+    @media only screen and (max-width:400px) {
+        padding         : 0 0;
+        width           : 100vw;
+        flex-direction  : column;
+    }
+    //tablet
+    @media only screen and (min-width:401px) and (max-width:960px) {
+        padding         : 0 0;
+        width           : 100vw;
+        flex-direction  : column;
+    }
+    //desktop
+    @media only screen and (min-width:961px) {        
+        flex-direction  : row;
+        padding         : 0 2rem;
+        width           : 80vw;
+        max-width       : 80vw;    
+        align-items     : flex-start;
+    }
+    
+
+
+}
+
+// Pantallas extra pequeñas (móviles) < 576px.
+// Pantallas pequeñas (_sm, tablets _en vertical) ≥ 576px.
+// Pantallas medianas (md, para tablets en horizontal) ≥ 768px.
+// Pantallas grandes (lg, tamaño escritorio) ≥ 992px.
+// Pantallas extra grandes (xl, escritorio grande) ≥ 1200px.
