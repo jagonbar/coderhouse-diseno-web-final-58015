@@ -1,40 +1,68 @@
-// header
+/**
+ *
+ * HEADER
+ *
+ */
+@mixin header-flex-direction($direction) {
+    flex-direction: $direction;
+}
 header {
-    // background-color : #d3d00c49;
-    background: rgba(116, 114, 17, 0.377);
-    background: linear-gradient(
-        180deg,
-        rgba(116, 114, 17, 0.377) 0%,
-        rgba(194, 0, 0, 1) 100%
-    );
-    margin: 0 auto;
-    height: 5rem;
-
     display: flex;
+    align-content: stretch;
+    
+    .header-child{
+        border: 1px solid black;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: stretch;
+        .title{
+            flex-grow: 5;
+            // width: 100%;
+        }
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        justify-content: center;
+        flex-direction: column;
+        .menu{
+            display: none;
+        }
+    }
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        align-items: center;
+        justify-content: space-evenly;
+        gap:0px;
+        align-content: stretch;
+        flex-direction: row;
+        .menu{
+            display: none;
+        }
+    }
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        flex-direction: row;
+        .menu{
+            display: none;
+        }
+    }
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        flex-direction: row;
+        .menu{
+            display: none;
+        }
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-between;
-
-    @media only screen and (max-width:400px) {
-        font-size: 1rem;
-        
-    }
-    @media only screen and (min-width:401px) and (max-width:960px) {
-        
-        font-size: 2rem;
-    }
-    @media only screen and (min-width:961px) {
-        font-size: 3rem;
-
-    }
-    font-family: $font-orbitron;
-    text-shadow: $sombra;
-    
-    #header-logo {
-        color: $blanco;//$color-rojo;
-    }
-    
-    #header-cart-user {
-        color:$blanco;
-        text-shadow: $sombra;
-    }
+    align-content: center;
+    width: 100%;
 }
