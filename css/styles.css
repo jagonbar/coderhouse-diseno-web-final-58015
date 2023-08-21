@@ -1,8 +1,3 @@
-/**
- *
- * _variables
- *
- */
 @font-face {
   font-family: "Orbitron";
   src: url(/multimedia/fonts/Orbitron-Black.ttf);
@@ -13,24 +8,21 @@
 }
 /**
  *
- * _mixin
- *
- */
-/**
- *
  * _PAGE
  *
  */
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 .page {
   margin: 0 auto;
   height: 100vh;
-  border: 4px solid black;
   /* Extra small devices (phones, 600px and down) */
   /* Small devices (portrait tablets and large phones, 600px and up) */
   /* Medium devices (landscape tablets, 768px and up) */
@@ -39,7 +31,6 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .page {
-    background-color: #eac435;
     width: 100%;
     max-width: 1800px;
     display: flex;
@@ -52,14 +43,12 @@ body {
   .page header {
     width: 100%;
     order: 1;
-    border: 1px solid red;
     flex-grow: 1;
   }
   .page main {
     width: 100%;
     height: 100%;
     order: 2;
-    border: 1px solid blue;
     flex-grow: 8;
   }
   .page aside {
@@ -67,10 +56,8 @@ body {
   }
   .page footer {
     flex-grow: 1;
-    height: 100px;
     width: 100%;
     order: 3;
-    border: 1px solid fuchsia;
   }
   .page nav {
     display: none;
@@ -91,14 +78,12 @@ body {
   .page header {
     width: 100%;
     order: 1;
-    border: 1px solid red;
     flex-grow: 1;
   }
   .page main {
     width: 100%;
     height: 100%;
     order: 2;
-    border: 1px solid blue;
     flex-grow: 8;
   }
   .page aside {
@@ -106,10 +91,8 @@ body {
   }
   .page footer {
     flex-grow: 1;
-    height: 100px;
     width: 100%;
     order: 3;
-    border: 1px solid fuchsia;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -119,35 +102,30 @@ body {
     max-width: 1800px;
     display: grid;
     grid-template-columns: 34% 33% 33%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 10% 72% 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "header header header" "aside main main" "footer footer footer";
   }
   .page header {
     grid-area: header;
-    border: 1px solid red;
     height: 100%;
     width: 100%;
   }
   .page main {
     grid-area: main;
-    border: 1px solid blue;
     height: 100%;
     width: 100%;
   }
   .page aside {
     grid-area: aside;
-    border: 1px solid green;
     display: block;
     height: 100%;
     width: 100%;
   }
   .page footer {
     grid-area: footer;
-    border: 1px solid fuchsia;
     width: 100%;
-    height: 100%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -156,7 +134,7 @@ body {
     max-width: 1800px;
     display: grid;
     grid-template-columns: 34% 33% 33%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 10% 72% 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "header header header" "aside main main" "footer footer footer";
@@ -164,28 +142,23 @@ body {
   }
   .page header {
     grid-area: header;
-    border: 1px solid red;
     height: 100%;
     width: 100%;
   }
   .page main {
     grid-area: main;
-    border: 1px solid blue;
     height: 100%;
     width: 100%;
   }
   .page aside {
     grid-area: aside;
-    border: 1px solid green;
     display: block;
     height: 100%;
     width: 100%;
   }
   .page footer {
     grid-area: footer;
-    border: 1px solid fuchsia;
     width: 100%;
-    height: 100%;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -196,35 +169,30 @@ body {
     max-width: 1800px;
     display: grid;
     grid-template-columns: 34% 33% 33%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 10% 72% 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "header header header" "aside main main" "footer footer footer";
   }
   .page header {
     grid-area: header;
-    border: 1px solid red;
     height: 100%;
     width: 100%;
   }
   .page main {
     grid-area: main;
-    border: 1px solid blue;
     height: 100%;
     width: 100%;
   }
   .page aside {
     grid-area: aside;
-    border: 1px solid green;
     display: block;
     height: 100%;
     width: 100%;
   }
   .page footer {
     grid-area: footer;
-    border: 1px solid fuchsia;
     width: 100%;
-    height: 100%;
   }
 }
 
@@ -234,16 +202,95 @@ body {
  *
  */
 header {
+  height: fit-content;
+  padding: 3px 1px;
   display: flex;
   align-content: stretch;
+  font-family: "Orbitron", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #c20000;
   /* Extra small devices (phones, 600px and down) */
   /* Small devices (portrait tablets and large phones, 600px and up) */
   /* Medium devices (landscape tablets, 768px and up) */
   /* Large devices (laptops/desktops, 992px and up) */
   /* Extra large devices (large laptops and desktops, 1200px and up) */
 }
-header .header-child {
-  border: 1px solid black;
+header .title {
+  display: flex;
+  justify-content: center;
+  row-gap: 5px;
+  flex-direction: row;
+  align-items: center;
+  align-content: stretch;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 11px 11px 11px rgba(8, 8, 8, 0.9);
+}
+header .title .title-image {
+  opacity: 0.7;
+}
+header .title .title-image img {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+}
+@media only screen and (min-width: 1200px) {
+  header .title .title-image {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .title {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  header .title {
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header .title {
+    font-size: 35px;
+    text-align: center;
+    background-image: url(/multimedia/img/joystick-rojo-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+header .menu {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 35px;
+  padding: 5px;
+  position: relative;
+}
+header .menu .menu-float {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  z-index: 2;
+  background-color: grey;
+  top: 0;
+  left: -700px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 10px;
+  transition: 0.5s;
+}
+header .menu .menu-float a {
+  padding: 5px;
+}
+header .menu .menu-float:hover {
+  left: 0;
+  transition: 0.5s;
+}
+header .menu .fa-bars:hover + .menu-float {
+  left: 0;
 }
 @media only screen and (max-width: 600px) {
   header {
@@ -266,11 +313,10 @@ header .header-child {
 }
 @media only screen and (min-width: 768px) {
   header {
-    align-items: center;
     justify-content: space-evenly;
     gap: 0px;
     align-content: stretch;
-    flex-direction: row;
+    flex-direction: column;
   }
   header .menu {
     display: none;
@@ -278,7 +324,7 @@ header .header-child {
 }
 @media only screen and (min-width: 992px) {
   header {
-    flex-direction: row;
+    flex-direction: column;
   }
   header .menu {
     display: none;
@@ -287,6 +333,7 @@ header .header-child {
 @media only screen and (min-width: 1200px) {
   header {
     flex-direction: row;
+    align-items: center;
   }
   header .menu {
     display: none;
@@ -298,7 +345,62 @@ nav {
   justify-content: space-evenly;
   align-items: stretch;
   align-content: center;
-  width: 70%;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+@media only screen and (min-width: 1200px) {
+  nav {
+    width: 60%;
+    padding: 0 10px 0 0;
+  }
+}
+nav a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  padding: 3px;
+  transition: 0.5s;
+}
+nav a:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+footer {
+  font-family: "Jura", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+  footer {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  footer {
+    font-size: 20px;
+  }
+}
+footer .footer-child {
+  padding: 10px;
+  width: 100%;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+footer .footer-end {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

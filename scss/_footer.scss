@@ -1,34 +1,39 @@
-footer{    
-    min-height      : 3rem;
-    width           : 100%;
-    background-color: black;
-    color           : #ccc;
-
-    margin          : 0 auto;
-    bottom          : 0px;
-    
-}
-.footer_content{
-    padding         : 10px 2rem;    
+footer {
     font-family     : $font-jura;    
-    max-width       : 70vw;
-    margin          : 0 auto;
-    font-size       : 0.8rem;
-}
-.footer_end{
-    padding         : 1rem 0 0;
-    font-size       : 1rem;
+    @media only screen and (max-width: 600px) {
+        font-size: 15px;
+    }
+    @media only screen and (min-width: 600px) {
+        font-size: 20px;
+    }
+    @media only screen and (min-width: 768px) {
+    }
+    @media only screen and (min-width: 992px) {
+    }
+    @media only screen and (min-width: 1200px){
+    }
+    background-color: black;
+    color: #ccc;
 
-}
-.flex_column_container{
-    display         : flex;
-    flex-direction  : column;
-    gap             :1rem;
-    justify-content : flex-start;
-}
-.flex_row_container{
-    display         : flex;
-    flex-direction  : row;
-    gap             :1rem;
-    justify-content : space-between;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .footer-child{
+        padding: 10px;
+        width: 100%;
+    }
+    .footer-links {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: stretch;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .footer-end{
+        text-align: center;
+    }
 }
