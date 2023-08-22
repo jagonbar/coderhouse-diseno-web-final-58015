@@ -9,7 +9,11 @@ header {
     display: flex;
     align-content: stretch;
     font-family: $font-orbitron;
-    
+    align-items: stretch;
+    background:     linear-gradient(
+                180deg,
+                rgba(116, 114, 17, 0.377) 0%,
+                rgba(194, 0, 0, 1) 100%);
     background-color   : $color-rojo;    
     .title {
         display: flex;
@@ -53,19 +57,22 @@ header {
         @media only screen and (min-width: 768px) {
         }
         @media only screen and (min-width: 992px) {
+            
         }
         @media only screen and (min-width: 1200px) {
+            
             font-size: 35px;        
             text-align: center;
-            background-image   : url(/multimedia/img/joystick-rojo-back.png);
+            
+            background-image   : url(/multimedia/img/joystick-rojo-lado-back.png);
             background-repeat  : no-repeat;
             background-size    : cover;
-            // background-position: center center;
+            background-position: center center;
         }
         text-shadow: $sombra;
     }
     .header-child {
-        // border: 1px solid black;
+        // border: 1px dotted white;
     }
     .menu {
         color: $blanco-transparente;
@@ -142,7 +149,7 @@ header {
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
         flex-direction: row;
-        align-items: center;
+        align-items: stretch;
         .menu {
             display: none;
         }
@@ -152,11 +159,12 @@ header {
 nav {
     display: flex;
     justify-content: space-evenly;
-    align-items: stretch;
+    align-items: center;
     align-content: center;  
     width: 100%;  
     border-radius:10px ;
-    border: 1px solid $blanco;
+    // border: 1px solid $blanco;
+    text-shadow: $sombra;
     @media only screen and (min-width: 1200px) {
         // justify-content: flex-end;
         width: 60%;
@@ -168,7 +176,7 @@ nav {
         padding: 3px;
         transition: 0.5s;
         &:hover{
-            text-decoration: underline;
+            text-decoration: wavy;
             transform: scale(1.2);
         }
     }
