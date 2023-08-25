@@ -45,7 +45,7 @@ body {
     margin: 0 auto;
     // top: 0;
     // bottom: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     flex-flow: column;
