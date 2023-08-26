@@ -1,8 +1,6 @@
-.games__content {
-    background-color: white;
-    // border: 1px dotted #92cce1;
-    // border-radius: 5px;
-    // bottom: 0;
+.games__content {    
+    background: linear-gradient(45deg, rgba(1,12,46,1) 25%, rgba(160,0,209,1) 100%);
+
     width: 100%;
 
     display: flex;
@@ -18,13 +16,13 @@
 
     // seleccion de consolas
     .games__options {
-        position: relative;
-        // border: 1px dotted #92cce1;
-        border: 2px solid #ccc;
+        position: relative;        
         border-radius: 5px;
         padding: 0 1rem;
         display: flex;
         box-sizing: border-box;
+        background-color: white;
+        background: linear-gradient(45deg, rgba(204,204,204,1) 2%, rgba(255,255,255,1) 100%);
         @media only screen and (max-width: 400px) {
             justify-content: center;
             flex-direction: column;
@@ -45,19 +43,7 @@
             display: flex;
             justify-content: center;
                 flex-wrap: nowrap;
-                // label {
-                //     width: 80px;
-                // }
-            // @media only screen and (max-width: 400px) {
-            //     justify-content: center;
-            //     flex-wrap: nowrap;
-            //     label {
-            //         width: 80px;
-            //     }
-            // }
-            // @media only screen and (min-width: 401px) and (max-width: 991px) {
-            //     justify-content: center;
-            // }
+
             @media only screen and (min-width: 992px) {
                 justify-content: space-around;
                 label {
@@ -101,9 +87,7 @@
             justify-content: flex-start;
             align-items: stretch;
             overflow: hidden;
-            & > * {
-                // border: 1px solid;
-            }
+            
             .games__game_img {
                 padding: 1rem;
                 position: relative;
@@ -115,22 +99,21 @@
 
 
                 img {
+                    object-fit:cover;
                     left: 20%;
                     top: 1px;
                     box-sizing: border-box;
                     position: absolute;
                     height: 10rem;
 
-                    // max-height: 50rem;
+
                     max-width: 7.5rem;
                     aspect-ratio: 16/9;
-                    // text-align: center;
-                    // top:5px;
+
                     box-shadow: 32px 31px 31px #000;
                 }
                 h2 {
                     z-index: 10;
-                    // top:1rem;
                     bottom: 2rem;
                     left: -1rem;                    
 

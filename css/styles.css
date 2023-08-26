@@ -395,7 +395,7 @@ nav a:hover {
 }
 
 .games__content {
-  background-color: white;
+  background: linear-gradient(45deg, rgb(1, 12, 46) 25%, rgb(160, 0, 209) 100%);
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -410,11 +410,12 @@ nav a:hover {
 }
 .games__content .games__options {
   position: relative;
-  border: 2px solid #ccc;
   border-radius: 5px;
   padding: 0 1rem;
   display: flex;
   box-sizing: border-box;
+  background-color: white;
+  background: linear-gradient(45deg, rgb(204, 204, 204) 2%, rgb(255, 255, 255) 100%);
 }
 @media only screen and (max-width: 400px) {
   .games__content .games__options {
@@ -487,6 +488,7 @@ nav a:hover {
   border-radius: 10px 10px 0 0;
 }
 .games__content .games__list .games__game .games__game_img img {
+  object-fit: cover;
   left: 20%;
   top: 1px;
   box-sizing: border-box;
@@ -596,7 +598,11 @@ nav a:hover {
 
 .nosotros__text {
   font-family: "Jura", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: white;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(194, 0, 0, 0.7)), url(../multimedia/img/perifericos-rojos.png);
+  background-color: rgb(204, 204, 204);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   padding: 2rem;
   font-size: 1.5rem;
   text-align: justify;
