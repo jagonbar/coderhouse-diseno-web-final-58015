@@ -47,4 +47,17 @@
             // }
         }
     }
+    .testimonio{
+        font-style: italic; /* Aplica estilo itálico al texto dentro del span */        
+        font-size: 1.5rem;
+        text-align: justify;
+        background: rgba(194, 0, 0, 0.4);
+        padding: 10px;
+        &::before{
+            content: "\"...";
+        }
+        &::after{
+            content: "...\"";
+        }
+    }
 }

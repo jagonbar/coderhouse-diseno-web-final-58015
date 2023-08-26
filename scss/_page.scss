@@ -16,30 +16,35 @@ body {
         background-attachment: fixed;
         background-repeat: no-repeat;
     }
+    // cambiar colores a main solo para debug
     main {
+        // background-color:rgba(41, 0, 55,0.4);
+        background: rgb(1,12,46);
+        background: linear-gradient(45deg, rgba(1,12,46,1) 25%, rgba(160,0,209,1) 100%);
         @media only screen and (max-width: 599px) {
-            background-color: #eac435;
+            // background-color: #eac435;//debug
         }
         /* Small devices (portrait tablets and large phones, 600px and up) */
         @media only screen and (min-width: 600px) {
-            background-color: hsl(304, 100%, 90%);
+            // background-color: hsl(304, 100%, 90%);//debug
         }
 
         /* Medium devices (landscape tablets, 768px and up) */
         @media only screen and (min-width: 768px) {
-            background-color: #03cea4;
+            // background-color: #03cea4;//debug
         }
 
         /* Large devices (laptops/desktops, 992px and up) */
         @media only screen and (min-width: 992px) {
-            background-color: #f08b82;
+            // background-color: #f08b82;//debug
         }
 
         /* Extra large devices (large laptops and desktops, 1200px and up) */
         @media only screen and (min-width: 1200px) {
-            background-color: #d0ccd0;
+            // background-color: #d0ccd0;//debug
         }
     } /*debug*/
+
 }
 .page {
     margin: 0 auto;
@@ -79,7 +84,9 @@ body {
         h1 {
             text-align: center;
             font-size: 2rem;
-            color: rgba(0, 0, 0, 1);
+            color: white;
+            text-shadow: 21px 21px 21px rgba(0, 0, 0, 0.8);
+
         }
         h2 {
             text-align: center;
@@ -110,35 +117,38 @@ body {
     }
     width: 100%;
     max-width: 1300px;
-    // border: 4px solid black;
+    background-color: #d0ccd0;
+    
 
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 599px) {
-        // background-color: #eac435;
+        // background-color: #eac435;//debug
         nav {
             display: none;
         }
     }
 
+    //debug
     /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 600px) {
-        background-color: hsl(304, 100%, 90%);
-    }
-
+    // @media only screen and (min-width: 600px) {
+    //     background-color: hsl(304, 100%, 90%);
+    // }
+    
+    //debug
     /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        background-color: #03cea4;
-    }
+    // @media only screen and (min-width: 768px) {
+    //     background-color: #03cea4;
+    // }
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
         width: 900px;
-        background-color: #f08b82;
+        // background-color: #f08b82; //debug
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
         width: 90vw;
-        background-color: #d0ccd0;
+        // background-color: #d0ccd0;//debug
     }
 }
