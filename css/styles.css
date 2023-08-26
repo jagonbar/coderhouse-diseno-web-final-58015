@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Orbitron";
-  src: url(/multimedia/fonts/Orbitron-Black.ttf);
+  src: url(../multimedia/fonts/Orbitron-Black.ttf);
 }
 @font-face {
   font-family: "Jura";
-  src: url(/multimedia/fonts/Jura-VariableFont_wght.ttf);
+  src: url(../multimedia/fonts/Jura-VariableFont_wght.ttf);
 }
 /**
  *
@@ -181,7 +181,7 @@ header .title .title-image img {
   header .title {
     font-size: 35px;
     text-align: center;
-    background-image: url(/multimedia/img/joystick-rojo-lado-back.png);
+    background-image: url(../multimedia/img/joystick-rojo-lado-back.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
