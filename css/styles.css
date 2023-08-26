@@ -23,7 +23,7 @@ body {
 }
 @media only screen and (min-width: 992px) {
   body {
-    background-image: url("/multimedia/img/bg-powergames.jpg"); /* Reemplaza 'ruta-a-tu-imagen.jpg' con la ruta de tu imagen */
+    background-image: url("../multimedia/img/bg-powergames.jpg"); /* Reemplaza 'ruta-a-tu-imagen.jpg' con la ruta de tu imagen */
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -577,6 +577,10 @@ nav a:hover {
   width: 100%;
   height: 100%;
 }
+.nosotros h1 {
+  background: rgb(1, 12, 46);
+  background: linear-gradient(45deg, rgba(1, 12, 46, 0.5) 25%, rgba(160, 0, 209, 0.5) 100%);
+}
 
 .nosotros__img_box {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgb(255, 255, 255)), url(../multimedia/img/nosotros.jpg);
@@ -599,7 +603,7 @@ nav a:hover {
 }
 
 .contacto {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgb(255, 255, 255)), url(/multimedia/img/call-center.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgb(255, 255, 255)), url(../multimedia/img/call-center.jpg);
   background-color: rgb(204, 204, 204);
   background-size: cover;
   background-repeat: no-repeat;

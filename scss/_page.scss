@@ -10,7 +10,7 @@ body {
     padding: 0;
     margin: 0 auto;
     @media only screen and (min-width: 992px) {
-        background-image: url("/multimedia/img/bg-powergames.jpg"); /* Reemplaza 'ruta-a-tu-imagen.jpg' con la ruta de tu imagen */
+        background-image: url("../multimedia/img/bg-powergames.jpg"); /* Reemplaza 'ruta-a-tu-imagen.jpg' con la ruta de tu imagen */
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
